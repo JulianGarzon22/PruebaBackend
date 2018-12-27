@@ -6,7 +6,7 @@
             <div class="card">
                 <div class="card-body">
                     <h2 class="card-title">Importar archivos CSV</h2>
-                    <form action="" method="post" enctype="multipart/form-data">
+                    <form action=" {{route('handlecsv')}} " method="post" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label for="file">Seleccione un archivo .CSV</label>

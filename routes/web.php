@@ -16,3 +16,5 @@ Route::redirect('/', 'inicio');
 Route::get('/inicio', 'ProductController@index')->name('inicio');
 
 Route::view('/comandos', 'command')->name('comandos');
+
+Route::post('/importcsv', 'ProductController@handleCommands')->name('handlecsv');

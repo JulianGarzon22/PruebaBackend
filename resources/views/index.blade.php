@@ -2,6 +2,12 @@
 
 @section('content')
     <div class="container">
+        @if(session()->has('message'))
+            <div class="alert alert-success">
+                {{ session()->get('message') }}
+            </div>
+        @endif
+
         <div class="card">
             <div class="card-body">
                 <h2 class="card-title">Lista de Productos</h3>
