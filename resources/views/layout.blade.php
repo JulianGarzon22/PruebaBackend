@@ -27,8 +27,8 @@
             </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="#">Inicio</a>
-                    <a class="nav-item nav-link" href="#">Agregar</a>
+                    <a class="nav-item nav-link" href="{{route('inicio')}}">Inicio</a>
+                    <a class="nav-item nav-link" href="{{route('comandos')}}">Agregar</a>
                     </div>
                 </div>
             </div>

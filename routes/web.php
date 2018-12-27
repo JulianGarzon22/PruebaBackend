@@ -11,14 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::redirect('/', 'inicio');
 
-Route::get('/inicio', function () {
-    return view('index');
-});
+Route::get('/inicio', 'ProductController@index')->name('inicio');
 
-Route::get('/agregar', function () {
-    return view('agregar');
-});
+Route::view('/comandos', 'command')->name('comandos');
